@@ -1,0 +1,22 @@
+{
+  "name": "hellominimax-0715",
+  "version": "1.0.0",
+  "description": "HelloMinimax - MiniMax Agent API proxy on Cloudflare Workers",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "start": "npx tsx src/server.ts"
+  },
+  "dependencies": {
+    "hono": "^4.6.5",
+    "eventsource-parser": "^1.1.2",
+    "@hono/node-server": "^1.13.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250303.0",
+    "wrangler": "^3.109.1",
+    "typescript": "^5.7.3",
+    "tsx": "^4.19.0"
+  }
+}
